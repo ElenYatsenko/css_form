@@ -10,22 +10,27 @@
   </head>
   <body>
     <section>
-      <div>
-        <h1>register</h1>
+      <div class="container">
+        <h1 class="capitalize">register</h1>
         <p>Create your account. It's free and only takes a minute.</p>
         <form action="./test">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="First Name" />
-          <input type="email" placeholder="email@gmail.com" />
+          <input type="text" placeholder="First Name"/>
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
-          <input type="checkbox" name="I accept the" />
-          <a target="_blank" href="#">Terms of Use</a>&
-          <a target="_blank" href="#">Privacy Policy.</a>
-          <input type="submit" value="register now" />
+          <label>
+            <span>
+              <input type="checkbox" name="accept" value="accept" />
+              I accept the
+              <a target="_blank" href="#">Terms of Use</a>&
+              <a target="_blank" href="#">Privacy Policy.</a>
+            </span>
+          </label>
+          <input type="submit" value="register now" class="capitalize buttom-submit text-overflow"/>
         </form>
+        <p>Already have an account? <a target="_blank" href="">Sing in</a></p>
       </div>
-      <p>Already have an account?<a target="_blank" href="">Sing in</a></p>
     </section>
   </body>
 </html>

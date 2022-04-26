@@ -1,0 +1,62 @@
+:root {
+  background-color: #63738a;
+  --light-color: #f2f3f7;
+  --brown-color: #5d5452;
+}
+
+h1,
+p {
+  text-align: center;
+  color: var(--brown-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* justify-content: space-around; */
+
+  max-width: 350px;
+  min-height: 300px;
+
+  margin: auto;
+
+  background-color: var(--light-color);
+}
+
+form {
+  padding: 1em;
+}
+
+label {
+  display: block;
+}
+
+input {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.buttom-submit {
+  width: 100%;
+
+  background-color: #51ab51;
+  color: var(--light-color);
+
+  border-radius: 2px;
+}
+a {
+  color: green;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} 
