@@ -1,35 +1,27 @@
 :root {
   background-color: #63738a;
+  font-family: "Radio Canada", sans-serif;
   --light-color: #f2f3f7;
   --brown-color: #5d5452;
+  --indent-size: 1rem;
+  --text-size: 14px;
+}
+
+section {
+  width: 400px;
+  margin: 100px auto;
+  font-size: var(--text-size);
+}
+
+div {
+  background-color: #f2f3f7;
 }
 
 h1,
 p {
   text-align: center;
+  font-weight: normal;
   color: var(--brown-color);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  /* justify-content: space-around; */
-
-  max-width: 350px;
-  min-height: 300px;
-
-  margin: auto;
-
-  background-color: var(--light-color);
-}
-
-form {
-  padding: 1em;
-}
-
-label {
-  display: block;
 }
 
 input {
@@ -37,6 +29,32 @@ input {
   padding: 0.5em;
   border: 1px solid #ccc;
   border-radius: 2px;
+}
+
+label{
+color: initial;
+}
+
+div + p,
+div + p > a {
+  color: var(--light-color);
+}
+
+span > a {
+  color: green;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  
+  min-height: 350px;
+ 
+  padding: 0 var(--indent-size);
+
+  background-color: var(--light-color);
 }
 
 .capitalize {
@@ -48,15 +66,13 @@ input {
 
   background-color: #51ab51;
   color: var(--light-color);
+  font-weight: bold;
 
   border-radius: 2px;
-}
-a {
-  color: green;
 }
 
 .text-overflow {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-} 
+}
