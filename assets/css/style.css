@@ -3,7 +3,7 @@
   font-family: "Radio Canada", sans-serif;
   --light-color: #f2f3f7;
   --brown-color: #5d5452;
-  --indent-size: 1rem;
+  --indent-size: 2rem;
   --text-size: 14px;
 }
 
@@ -23,7 +23,10 @@ p {
   font-weight: normal;
   color: var(--brown-color);
 }
-
+h1 {
+  padding-top: 1.5rem;
+  font-size: calc(var(--text-size)* 2) ;
+}
 input {
   margin-top: 0.5em;
   padding: 0.5em;
@@ -31,13 +34,8 @@ input {
   border-radius: 2px;
 }
 
-label{
-color: initial;
-}
-
-div + p,
-div + p > a {
-  color: var(--light-color);
+label > *{
+  color: #757575;
 }
 
 span > a {
@@ -49,10 +47,9 @@ span > a {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  
+
   min-height: 350px;
- 
-  padding: 0 var(--indent-size);
+  padding: 1.5rem;
 
   background-color: var(--light-color);
 }
@@ -75,4 +72,9 @@ span > a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.footer-form,
+.footer-form>*{
+  color: var(--light-color);
 }
