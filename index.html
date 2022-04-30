@@ -14,12 +14,44 @@
         <h1 class="capitalize">register</h1>
         <p>Create your account. It's free and only takes a minute.</p>
         <form action="./test" class="container">
-          <div class="info-line"><input type="text" placeholder="First Name" autofocus/> <input type="text" placeholder="Last Name"/></div>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
+          <div class="info-line">
+            <input
+              type="text"
+              placeholder="First Name"
+              autofocus
+              pattern="[a-z0-9_-]{3,15}$"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              pattern="[a-z0-9_-]{3,15}$"
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+          />
           <label>
-            <input type="checkbox" name="accept" value="accept" class="custom-checkbox" register />
+            <input
+              type="checkbox"
+              name="accept"
+              value="accept"
+              class="custom-checkbox"
+              register
+            />
             <span
               >I accept the <a target="_blank" href="#">Terms of Use</a> &
               <a target="_blank" href="#">Privacy Policy.</a></span
@@ -32,7 +64,9 @@
           />
         </form>
       </div>
-      <p class="footer-form">Already have an account? <a target="_blank" href="">Sing in</a></p>
+      <p class="footer-form">
+        Already have an account? <a target="_blank" href="">Sing in</a>
+      </p>
     </section>
   </body>
 </html>
