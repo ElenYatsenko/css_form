@@ -15,6 +15,7 @@ section {
 
 div {
   background-color: #f2f3f7;
+  position: relative;
 }
 
 h1,
@@ -23,10 +24,28 @@ p {
   font-weight: normal;
   color: var(--brown-color);
 }
-h1 {
+h1,
+h1::before,
+h1::after {
   padding-top: 1.5rem;
   font-size: calc(var(--text-size) * 2);
 }
+
+h1::before,
+h1::after {
+  content: "";
+  border-bottom: 1px solid var(--brown-color);
+  width: 25%;
+  height: 0.5em;
+  position: absolute;
+  top: 0px;
+  margin-left: calc(-25% - 10px);
+}
+
+h1::after {
+  margin-left: 10px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -92,5 +111,5 @@ span > a {
 }
 
 .custom-checkbox {
-  box-shadow: #757575;
+  box-shadow: inset 0 0 5px #aaa;
 }
