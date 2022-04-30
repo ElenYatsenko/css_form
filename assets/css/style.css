@@ -24,6 +24,7 @@ p {
   font-weight: normal;
   color: var(--brown-color);
 }
+
 h1,
 h1::before,
 h1::after {
