@@ -7,33 +7,33 @@
   --text-size: 14px;
 }
 
-section {
+.main {
   width: 400px;
   margin: auto;
   font-size: var(--text-size);
 }
 
-div {
+.main-container {
   background-color: #f2f3f7;
   position: relative;
 }
 
-h1,
-p {
+.header,
+.subtitle {
   text-align: center;
   font-weight: normal;
   color: var(--brown-color);
 }
 
-h1,
-h1::before,
-h1::after {
+.header,
+.header::before,
+.header::after {
   padding-top: 1.5rem;
   font-size: calc(var(--text-size) * 2);
 }
 
-h1::before,
-h1::after {
+.header::before,
+.header::after {
   content: "";
   border-bottom: 1px solid var(--brown-color);
   width: 25%;
@@ -43,7 +43,7 @@ h1::after {
   margin-left: calc(-25% - 10px);
 }
 
-h1::after {
+.header::after {
   margin-left: 10px;
 }
 
@@ -58,12 +58,13 @@ h1::after {
 
   background-color: var(--light-color);
 }
-input {
+
+.main-input {
   padding: 0.7em;
   border: 1px solid #ccc;
   border-radius: 2px;
 }
-input:focus {
+.main-input:focus {
   outline: none;
   box-shadow: inset 0 0 3px #aaa;
 }
@@ -72,15 +73,15 @@ input:focus {
   justify-content: space-between;
 }
 
-form > div > input {
+.info-line > .main-input{
   max-width: 160px;
 }
 
-label > * {
+.accept > * {
   color: #757575;
 }
 
-span > a {
+.form-link {
   color: green;
   text-decoration: none;
 }
